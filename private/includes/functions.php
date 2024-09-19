@@ -3,7 +3,7 @@
 class Database{
       //connection // since we will be needing this conn only inside here we keep it private so no one can connect to our database
   private function dbconnect(){
-      if (!$conn = new mysqli('localhost','root','','secirity_db')){
+      if (!$conn = new mysqli('localhost','root','','security_db')){
           die("Could not connect to the database");
       }
       return $conn;
